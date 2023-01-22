@@ -7,6 +7,13 @@ terraform {
   }
 
   required_version = ">= 1.1.0"
+
+  backend "azurerm" {
+    resource_group_name = "rg_tf_state"
+    storage_account_name = "satfstate"
+    container_name = "tfstate"
+    key = "lab.terraform.tfstate"
+  }
 }
 
 provider "azurerm" {
