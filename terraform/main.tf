@@ -20,7 +20,7 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_resource_group" "rg-prod-lab" {
-  name     = "rg-prod-lab"
+resource "azurerm_resource_group" "rg-dev-lab" {
+  name     = "rg-dev-lab"
   location = "westeurope"
 }
